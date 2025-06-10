@@ -1,0 +1,44 @@
+.card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(230, 49, 49);
+    padding: 24px 24px 18px;
+    border-radius: 12px;
+}
+
+.picture img{
+    width: 180px;
+    border-radius: 8px;
+}
+
+.text{
+    color: white;
+    width: 100%;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .card{
+        width: 650px;
+    }
+    .text{
+        padding-bottom: 20px;
+    }
+    .text h3{
+        font-size: 2rem;
+    }
+    .text p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .card{
+        display: block;
+        height: 500px;
+        width: 200px;
+        background-color: chocolate;
+    }
+}
